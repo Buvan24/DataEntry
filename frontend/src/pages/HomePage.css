@@ -1,0 +1,23 @@
+.home-root{min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--primary-dark);padding:20px;position:relative;overflow:hidden;}
+.home-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(45,106,79,.18) 0%,transparent 55%),radial-gradient(ellipse at 80% 20%,rgba(201,168,76,.07) 0%,transparent 45%),repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(255,255,255,.012) 40px,rgba(255,255,255,.012) 41px);}
+.home-container{position:relative;z-index:1;width:100%;max-width:460px;}
+.home-header{text-align:center;margin-bottom:36px;}
+.home-emblem{display:flex;justify-content:center;margin-bottom:22px;animation:spinSlow 25s linear infinite;}
+@keyframes spinSlow{to{transform:rotate(360deg);}}
+.home-title{font-family:var(--font-display);font-size:36px;font-weight:900;color:#fff;line-height:1.15;margin-bottom:10px;letter-spacing:-.5px;}
+.home-subtitle{font-size:12px;color:rgba(255,255,255,.38);letter-spacing:.1em;text-transform:uppercase;}
+.home-sep{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+.home-sep::before,.home-sep::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.1);}
+.home-sep span{font-size:10.5px;color:rgba(255,255,255,.28);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;}
+.home-cards{display:flex;flex-direction:column;gap:12px;margin-bottom:36px;}
+.home-card{display:flex;align-items:center;gap:16px;padding:20px 22px;background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-md);cursor:pointer;text-align:left;color:#fff;font-family:var(--font-body);width:100%;transition:all .22s;}
+.home-card:hover{background:rgba(255,255,255,.09);border-color:rgba(201,168,76,.45);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.3);}
+.home-card-admin{background:rgba(201,168,76,.07);border-color:rgba(201,168,76,.18);}
+.home-card-admin:hover{background:rgba(201,168,76,.14);border-color:rgba(201,168,76,.55);}
+.home-card-icon{width:52px;height:52px;border-radius:12px;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);}
+.home-card-body{flex:1;}
+.home-card-title{font-size:16px;font-weight:600;color:#fff;margin-bottom:3px;}
+.home-card-desc{font-size:12px;color:rgba(255,255,255,.42);}
+.home-card-arrow{font-size:18px;color:rgba(255,255,255,.18);transition:all .2s;}
+.home-card:hover .home-card-arrow{color:var(--accent);transform:translateX(4px);}
+.home-footer{text-align:center;font-size:11px;color:rgba(255,255,255,.18);letter-spacing:.05em;}
